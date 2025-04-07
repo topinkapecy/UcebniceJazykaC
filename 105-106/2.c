@@ -1,8 +1,6 @@
 //ZADÁNÍ
-/*Čtěte znaky z klávesnice až do EOLN, které si definujte. Po skončení čtení
-vypište počet zadaných číslic. Dále opište jen zadaná písmena, která
-převeďte na velká. Využijte maker isdigit (), isalpha() a toupper()
-ze souboru ctype.h */
+/*Čteme znaky až do EOLN, po skončení čtení
+vypíšeme počet číslic a zadaná písmena převádíme na velká.*/
 #include <stdio.h>
 #include <ctype.h>
 
