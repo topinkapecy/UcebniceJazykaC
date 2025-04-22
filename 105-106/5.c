@@ -7,7 +7,7 @@
 
 int main()
 {
-    char vstupni = 126;
+    char vstupni = 100;
     char aktual;
 
     printf("Je znak %c v tabulce ASCII v intervalu 32-126 včetně?\n", vstupni);
@@ -19,17 +19,21 @@ int main()
         for(int i = 0; i <= 126 ; i++)
         {
             aktual = i;
-            while(i <= 32)
+            if(i <= 32)
             {
-                printf("%d .Znak není tisknutelný.", i);
-                break;
+                printf("%d. Znak není tisknutelný.\n", i);
             }
-            printf("%d . %c\n", i , aktual);
+            else
+            {
+                printf("%d. %c\n", i , aktual);
+            }
+
         }
         return 0;
     }
     else
     {
+        printf("0\n");
         printf("Znak není v požadovaných mezích.\n");
         return 0;
     }
